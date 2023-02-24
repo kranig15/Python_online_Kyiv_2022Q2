@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Prototype</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<div class="headpage" id="headpage"></div>
+<div class="ribbonmenu">
+<button class="tablink" onclick="openPage('Tasks', this)" id="defaultOpen">Tasks</button>
+<button class="tablink" onclick="openPage('Actions', this)">Actions</button>
+<button class="tablink" onclick="openPage('Teams', this)">Teams</button>
+    <button class="addrecord "onclick="openForm()">Add</button>
+</div>
+<div class="filter"></div>
+<div id="Tasks" class="tabcontent">
+    <table style="border-collapse: collapse"><tr><th>Task ID</th><th>Creation Date</th><th>Preparation</th><th>Cleaning</th><th></th></tr>
+    <tr><td>1456</td><td>22/02/2023</td><td>10%</td><td>5%</td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr>
+    <tr><td>1457</td><td>23/02/2023</td><td>11%</td><td>3%</td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr></table>
+</div>
+
+<div id="Actions" class="tabcontent">
+  <table style="border-collapse: collapse"><tr><th>Action ID</th><th>Task ID</th><th>Creation Date</th><th>Action Type</th><th>Team</th><th>Percent</th><th></th><th></th></tr>
+    <tr><td>1</td><td>1456</td><td>22/02/2023</td><td>Preparation</td><td>Team1</td><td>1%</td><td><button class="btnedit" onclick=""><img alt="bin" src="images/pencil.png" width="25%"></button></td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr>
+     <tr><td>2</td><td>1457</td><td>23/02/2023</td><td>Cleaning</td><td>Team2</td><td>3%</td><td><button class="btnedit" onclick=""><img alt="bin" src="images/pencil.png" width="25%"></button></td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr></table>
+</div>
+
+<div id="Teams" class="tabcontent">
+    <table style="border-collapse: collapse"><tr><th>Team Name</th><th>Team Type</th><th></th><th></th></tr>
+    <tr><td>Team1</td><td>Manual</td><td><button class="btnedit" onclick=""><img alt="bin" src="images/pencil.png" width="25%"></button></td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr>
+     <tr><td>Team2</td><td>Mechanical</td><td><button class="btnedit" onclick=""><img alt="bin" src="images/pencil.png" width="25%"></button></td><td><button class="btndelete" onclick=""><img alt="bin" src="images/bin.png" width="25%"></button></td></tr></table>
+</div>
+
+
+<script src="js/myScript.js"></script>
+</body>
+</html>

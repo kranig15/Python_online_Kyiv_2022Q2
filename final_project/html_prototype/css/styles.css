@@ -1,0 +1,106 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.headpage {
+  background-color: #999999;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #000;
+  margin: 30px 0;
+  padding: 30px;
+  text-align: center;
+}
+
+.ribbonmenu {
+  background-color: #FFFFFF;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #000;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  /*overflow:hidden;*/
+  height:5%;
+}
+
+
+/* Style tab links */
+.tablink {
+  background-color: #676566;
+  color: #D5D6DB;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Style Add */
+.addrecord {
+  background-color: #6BA74F;
+  color: #D5D6DB;
+  float: right;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+.tablink:hover {
+  background-color: white;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  padding: 13px;
+  color: #000;
+}
+/* Style the filter block */
+.filter {
+  color: black;
+  background-color: #FFFFFF;
+  border-width: 3px;
+  border-style: none solid solid;
+  border-color: #000;
+  height:5%;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+  background-color: white;
+}
+
+
+
+
+/* Style the tab table content */
+th, td {
+  border: black 1px solid;
+  text-align: center;
+  color: black;
+  padding: 20px 20px;
+  margin: 10px;
+  height: 100%;
+  background-color: #C7C9C6;
+}
+
+/* Re-Style the tab table value content */
+td {
+  background-color: #FFFFFF;
+  padding: 5px 5px;
+}
+tr:nth-child(odd) td{
+    background-color: #EEEEEE;
+}
