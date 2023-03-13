@@ -1,0 +1,13 @@
+language: python
+
+python:
+    - 3.7
+    - 3.10
+    
+# install dependencies
+install: 
+  -pip install -r requirements.txt
+  
+# check style
+script:
+    - pylint --output-format=text webapp.py

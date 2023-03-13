@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block sel_style %}{% endblock %}
+{% block content %}
+<div class="headpage" id="headpage">{% block headpage %}{% endblock %}</div>
+<div class="ribbonmenu">
+<nav>
+        <a href="{{ url_for('tasks.index') }}" ><button class="tablink" name="tasks" >Tasks</button></a>
+        <a href="{{ url_for('actions.index') }}" ><button class="tablink" name="actions"  >Actions</button></a>
+        <a href="{{ url_for('teams.index') }}"><button class="tablink" name="teams" >Teams</button></a>
+</nav>
+</div>
+<div class="filter">{% block filter %}{% endblock %}</div>
+<div class="tabcontent">{% block table %}{% endblock %}
+</div>
+
+{% endblock %}

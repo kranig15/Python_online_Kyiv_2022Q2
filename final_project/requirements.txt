@@ -1,0 +1,5 @@
+# Everything needed in production
+# Flask
+Flask==2.2.3
+# PyYAML
+PyYAML==6.0

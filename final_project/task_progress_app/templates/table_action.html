@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block sel_style %}
+ button[name="actions"] {
+  background-color: #CCCCCC;
+  color: #000000;
+}
+{% endblock %}
+{% block headpage %}Actions List{% endblock %}
+{% block filter%}{% include 'filter1.html' %}{% endblock %}
+{% block table %}
+    <table style="border-collapse: collapse"><tr> {% for col_name in header %}<th>{{ col_name }}</th>{% endfor %}<th></th><th></th></tr>
+    {% for val in value %}<tr>{% for v in val %}<td>{{v}}</td>{% endfor %}<td><button class="btnedit" onclick=""><img alt="bin" src="../static/images/pencil.png" width="25%"></button></td><td><button class="btndelete" onclick=""><img alt="bin" src="../static/images/bin.png" width="25%"></button></td></tr>{% endfor %}</table>
+{% endblock %}
